@@ -20,7 +20,8 @@ public class EmployeeServiceImpl implements EmployeeService {
 
     @Override
     public Employee getEmployeeById(Long id) {
-        return employeeRepository.findById(id).get();
+//        return employeeRepository.findById(id).get();
+        return employeeRepository.findById(id).orElse(null);
     }
 
     @Override
@@ -36,7 +37,6 @@ public class EmployeeServiceImpl implements EmployeeService {
 
     @Override
     public Employee updateEmployee(Employee employee) {
-
-        return employee;
+        return employeeRepository.save(employee);
     }
 }

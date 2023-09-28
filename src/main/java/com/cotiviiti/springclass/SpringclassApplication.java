@@ -19,7 +19,7 @@ public class SpringclassApplication implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
-		Employee e1 = new Employee("srijan","manbhawan","kcsrijan33@gmail.com");
+		Employee e1 = new Employee("sagar","pokhara","sagarsubedi@gmail.com");
 		Employee e2 = new Employee("Ram","boudha","ram33@gmail.com");
 		Employee e3 = new Employee("Shyam","Pokhara","shyam@gmail.com");
 		Employee e4 = new Employee("Hari","Dailekh","hari3@gmail.com");
